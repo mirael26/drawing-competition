@@ -1,0 +1,40 @@
+.button {
+  @include button-text;
+  padding: 18px 70px;
+  color: #fff;
+  border-radius: 15px;
+
+  &--main {
+    background-color: $main-color;
+
+    &.button--shadow {
+      box-shadow: 0px 15px 30px rgba($main-color, 0.25);
+    }
+  }
+
+  &--accent {
+    background-color: $accent-color;
+
+    &.button--shadow {
+      box-shadow: 0px 15px 30px rgba($accent-color, 0.25);
+    }
+  }
+
+  &--additional-accent {
+    background-color: $additional-accent-color;
+
+    &.button--shadow {
+      box-shadow: 0px 15px 30px rgba($additional-accent-color, 0.25);
+    }
+  }
+
+  &--simple {
+    color: $accent-font-color;
+    background-color: $bg-common;
+  }
+
+  &--small {
+    padding: 10px 58px;
+    font-weight: 400;
+  }
+}
