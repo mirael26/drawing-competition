@@ -17,7 +17,7 @@
   font-weight: 900;
   font-size: 24px;
   line-height: 33px;
-  color: $accent-font-color;
+  color: $accent-content-color;
 }
 
 .timer__cell {
@@ -48,9 +48,9 @@
   line-height: 22px;
   letter-spacing: 0.04em;
   text-align: center;
-  color: $accent-font-color;
+  color: $accent-content-color;
 
   &--light {
-    color: #9FA0A7;
+    color: $pale-content-color;
   }
 }
