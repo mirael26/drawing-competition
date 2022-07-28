@@ -1,21 +1,19 @@
 import * as React from "react";
 
-import { ButtonColors, ButtonSizes } from "../../../types";
+import { ButtonBorder, ButtonColors, ButtonSizes } from "../../../types";
 
 interface ButtonProps {
   color?: ButtonColors,
   size?: ButtonSizes,
   text: string,
   shadow?: boolean,
-  borderColor?: string,
+  border?: ButtonBorder,
 }
 
-const Button = ({color = 'main', size, text, shadow, borderColor}: ButtonProps): JSX.Element => {
-  const border = borderColor ? `1px solid ${borderColor}` : 'none';
+const Button = ({color = 'main', size, text, shadow, border}: ButtonProps): JSX.Element => {
 
   return (
-    <div className={`button button--${color} button-${size}${shadow ? ' button--shadow' : ''}${borderColor ? ' button--border' : ''}`}
-      style={{border: border}}>
+    <div className={`button button--${color} button-${size}${shadow ? ' button--shadow' : ''}${border ? ` button--border-${border}` : ''}`}>
       {text}
     </div>
   )

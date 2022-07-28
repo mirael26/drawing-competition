@@ -29,12 +29,20 @@
   }
 
   &--simple {
-    color: $accent-font-color;
+    color: $accent-content-color;
     background-color: $bg-common;
   }
 
   &--small {
     padding: 10px 58px;
     font-weight: 400;
+  }
+
+  &--border-dark {
+    border: 1px solid $accent-content-color;
+  }
+
+  &--border-pale {
+    border: 1px solid $pale-content-color;
   }
 }
