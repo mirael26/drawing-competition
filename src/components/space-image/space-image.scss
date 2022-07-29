@@ -1,0 +1,169 @@
+.space-image {
+  position: relative;
+}
+
+.space-image__paper-planes {
+  position: absolute;
+  top: 716px;
+  right: 525px;
+  width: 170px;
+  height: 90px;
+  background: url('../../img/paper-planes.svg') center no-repeat;
+}
+
+.space-image__girl {
+  position: absolute;
+  top: 474px;
+  right: 220px;
+  width: 275px;
+  height: 330px;
+  background: url('../../img/girl.svg') center no-repeat;
+}
+
+.space-image__pencil {
+  position: absolute;
+  top: 156px;
+  right: 189px;
+  width: 52px;
+  height: 50px;
+  background: url('../../img/pencil.svg') center no-repeat;
+  z-index: -1;
+  transform: rotate(-121deg);
+}
+
+.space-image__space {
+  position: absolute;
+  top: 0;
+  right: -15px;
+  width: 882px;
+  height: 693px;
+  background: url('../../img/space/space-bg.svg') center no-repeat;
+  z-index: -2;
+}
+
+.space-image__atom {
+  position: absolute;
+  top: 132px;
+  right: 739px;
+  width: 50px;
+  height: 50px;
+  background: url('../../img/space/atom.svg') center no-repeat;
+}
+
+.space-image__moon {
+  position: absolute;
+  top: 82px;
+  right: 580px;
+  width: 75px;
+  height: 75px;
+  background: url('../../img/space/moon.svg') center no-repeat;
+}
+
+.space-image__alarm {
+  position: absolute;
+  top: 220px;
+  right: 661px;
+  width: 65px;
+  height: 90px;
+  background: url('../../img/space/alarm.svg') center no-repeat;
+}
+
+.space-image__rocket {
+  position: absolute;
+  top: 353px;
+  right: 606px;
+  width: 170px;
+  height: 140px;
+  background: url('../../img/space/rocket.svg') center no-repeat;
+}
+
+.space-image__striped-planet {
+  position: absolute;
+  top: 134px;
+  right: 387px;
+  width: 50px;
+  height: 50px;
+  background: url('../../img/space/striped-planet.svg') center no-repeat;
+}
+
+.space-image__aerostat {
+  position: absolute;
+  top: 296px;
+  right: 440px;
+  width: 70px;
+  height: 100px;
+  background: url('../../img/space/aerostat.svg') center no-repeat;
+}
+
+.space-image__earth {
+  position: absolute;
+  top: 461px;
+  right: 497px;
+  width: 50px;
+  height: 50px;
+  background: url('../../img/space/earth.svg') center no-repeat;
+}
+
+.space-image__bulb {
+  position: absolute;
+  top: 340px;
+  right: 278px;
+  width: 110px;
+  height: 110px;
+  background: url('../../img/space/bulb.svg') center no-repeat;
+}
+
+.space-image__plus {
+  position: absolute;
+  top: 241px;
+  right: 402px;
+  width: 30px;
+  height: 30px;
+  background: url('../../img/space/plus.svg') center no-repeat;
+}
+
+.space-image__division {
+  position: absolute;
+  top: 185px;
+  right: 314px;
+  width: 35px;
+  height: 40px;
+  background: url('../../img/space/division.svg') center no-repeat;
+}
+
+.space-image__elephant {
+  position: absolute;
+  top:  235px;
+  right: 164px;
+  width: 115px;
+  height: 90px;
+  background: url('../../img/space/elephant.svg') center no-repeat;
+}
+
+.space-image__palette {
+  position: absolute;
+  top: 119px;
+  right: 71px;
+  width: 72px;
+  height: 51px;
+  background: url('../../img/space/palette.svg') center no-repeat;
+}
+
+.space-image__plane {
+  position: absolute;
+  top: 329px;
+  right: 31px;
+  width: 115px;
+  height: 45px;
+  background: url('../../img/space/plane.svg') center no-repeat;
+}
+
+.space-image__stars {
+  position: absolute;
+  top: 14px;
+  right: 43px;
+  width: 703px;
+  height: 510px;
+  background: url('../../img/space/stars.svg') no-repeat;
+  z-index: -1;
+}
