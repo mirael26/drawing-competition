@@ -11,9 +11,8 @@ interface ButtonProps {
 }
 
 const Button = ({color = 'main', size, text, shadow, border}: ButtonProps): JSX.Element => {
-
   return (
-    <div className={`button button--${color} button-${size}${shadow ? ' button--shadow' : ''}${border ? ` button--border-${border}` : ''}`}>
+    <div className={`button button--${color} button--${size}${shadow ? ' button--shadow' : ''}${border ? ` button--border-${border}` : ''}`}>
       {text}
     </div>
   )

@@ -1,6 +1,6 @@
 .button {
   @include button-text;
-  padding: 18px 70px;
+  padding: 18px 40px;
   color: #fff;
   border-radius: 15px;
 
@@ -34,7 +34,7 @@
   }
 
   &--small {
-    padding: 10px 58px;
+    padding: 10px 30px;
     font-weight: 400;
   }
 
