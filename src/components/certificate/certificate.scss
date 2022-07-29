@@ -1,0 +1,42 @@
+.certificate {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+
+.certificate__info {
+  width: 500px;
+  margin-right: 20px;
+  padding: 56px 0 0;
+}
+
+.certificate__title {
+  @include h2-text;
+  margin-bottom: 27px;
+  color: $accent-content-color;
+
+  &--accent {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: -6px;
+      left: 0;
+      width: 150px;
+      height: 10px;
+      background: url('../../img/underline-certificate.svg') bottom no-repeat;
+    }
+  }
+}
+
+.certificate__text {
+  @include common-text;
+  margin-bottom: 34px;
+  color: $common-content-color;
+}
+
+.certificate__image {
+  width: 680px;
+  height: 480px;
+}

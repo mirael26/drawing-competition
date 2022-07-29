@@ -3,6 +3,7 @@ import * as React from "react";
 import ProjectDescription from "../project-description/project-description";
 import Features from "../features/features";
 import Instruction from "../instruction/instruction";
+import Certificate from "../certificate/certificate";
 
 const Main = (): JSX.Element => {
   return (
@@ -17,6 +18,10 @@ const Main = (): JSX.Element => {
 
       <section className="main__instruction">
         <Instruction />
+      </section>
+
+      <section className="main__certificate">
+        <Certificate />
       </section>
 
     </div>
