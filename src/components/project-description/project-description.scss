@@ -1,0 +1,19 @@
+.project-description {
+  padding: 100px 0;
+}
+
+.project-description__text {
+  @include promo-text;
+  max-width: 800px;
+  margin: 0 auto;
+  color: $accent-content-color;
+
+  &--strong {
+    font-weight: 700;
+  }
+
+  &--accent {
+    font-weight: 700;
+    color: $main-color;
+  }
+}
