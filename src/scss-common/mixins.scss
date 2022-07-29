@@ -1,3 +1,10 @@
+//containers
+
+@mixin center-container {
+  max-width: 1395px;
+  margin: 0 auto;
+}
+
 // text
 
 @mixin h1-text {

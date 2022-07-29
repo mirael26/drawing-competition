@@ -1,0 +1,64 @@
+.header {
+  position: relative;
+  padding: 30px 0 50px;
+}
+
+.header__container {
+  @include center-container;
+}
+
+.header__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__login-button {
+  width: 180px;
+}
+
+.header__banner {
+  padding: 250px 0 57px;
+}
+
+.header__subtitle {
+  @include small-text;
+  line-height: 166%;  
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $pale-content-color;
+}
+
+.header__title {
+  @include h1-text;
+  max-width: 653px;
+  margin-bottom: 40px;
+  color: $accent-content-color;
+}
+
+.header__text {
+  @include common-text;
+  color: $common-content-color;
+  max-width: 570px;
+  margin-bottom: 60px;
+}
+
+.header__timer-block {
+  display: flex;
+  gap: 60px;
+}
+
+.header__join-button {
+  width: 300px;
+}
+
+.header__timer {
+  width: 264px;
+}
+
+.header__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}

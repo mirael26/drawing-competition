@@ -1,6 +1,16 @@
+//common
 @import './scss-common/fonts.scss';
 @import './scss-common/scaffolding.scss';
 @import './scss-common/variables.scss';
 @import './scss-common/visually-hidden.scss';
 @import './scss-common/mixins.scss';
 @import './normalize.css';
+
+//generic
+@import './components/generic/logo/logo.scss';
+@import './components/generic/button/button.scss';
+
+//components
+@import './components/header/header.scss';
+@import './components/timer/timer.scss';
+@import './components/space-image/space-image.scss';
