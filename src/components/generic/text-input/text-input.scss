@@ -1,0 +1,13 @@
+.text-input {
+  @include input-text;
+  width: 100%;
+  padding: 18px 20px;
+  color: $accent-content-color;
+  background-color: #fff;
+  border: 1px solid #9FA0A7;
+  border-radius: 15px;
+
+  &::placeholder {
+    color: $common-content-color;
+  }
+}
