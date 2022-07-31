@@ -4,6 +4,7 @@ import ProjectDescription from "../project-description/project-description";
 import Features from "../features/features";
 import Instruction from "../instruction/instruction";
 import Certificate from "../certificate/certificate";
+import Registration from "../registration/registration";
 
 const Main = (): JSX.Element => {
   return (
@@ -22,6 +23,10 @@ const Main = (): JSX.Element => {
 
       <section className="main__certificate">
         <Certificate />
+      </section>
+
+      <section className="main__certificate">
+        <Registration />
       </section>
 
     </div>
