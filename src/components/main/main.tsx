@@ -38,7 +38,6 @@ const Main = (): JSX.Element => {
       <section className="main__subscribe">
         <Subscribe />
       </section>
-
     </div>
   )
 };
