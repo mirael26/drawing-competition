@@ -1,5 +1,14 @@
-.main__features,
-.main__instruction,
+.main {
+  background: url('../../img/bg-clouds.svg') center top 26% no-repeat;
+  background-size: 100% auto; 
+}
+
+.main__features {
+  background: url('../../img/bg-waves.svg') center bottom 6px no-repeat;
+  background-size: 100% auto;
+}
+
 .main__certificate {
-  @include center-container;
+  background: url('../../img/bg-waves.svg') center bottom no-repeat;
+  background-size: 100% auto;
 }
