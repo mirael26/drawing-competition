@@ -5,6 +5,7 @@ import Features from "../features/features";
 import Instruction from "../instruction/instruction";
 import Certificate from "../certificate/certificate";
 import Registration from "../registration/registration";
+import Faq from "../faq/faq";
 
 const Main = (): JSX.Element => {
   return (
@@ -25,8 +26,12 @@ const Main = (): JSX.Element => {
         <Certificate />
       </section>
 
-      <section className="main__certificate">
+      <section className="main__registration">
         <Registration />
+      </section>
+
+      <section className="main__faq">
+        <Faq />
       </section>
 
     </div>
