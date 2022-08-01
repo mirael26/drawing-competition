@@ -1,0 +1,9 @@
+.main-nav__list {
+  display: flex;
+  gap: 40px;
+}
+
+.main-nav__link {
+  @include nav-text;
+  color: $accent-content-color;
+}
