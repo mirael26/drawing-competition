@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import RepostDiscount from "../repost-discount/repost-discount";
+import RegistrationForm from "../registration-form/registration-form";
 
 const Registration = (): JSX.Element => {
   return (
@@ -9,7 +10,9 @@ const Registration = (): JSX.Element => {
         <RepostDiscount />
       </div>
 
-      <div className="registration__registration"></div>
+      <div className="registration__registration-form">
+        <RegistrationForm />
+      </div>
     </div>
   )
 };

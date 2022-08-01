@@ -9,6 +9,7 @@
 //generic
 @import './components/generic/logo/logo.scss';
 @import './components/generic/button/button.scss';
+@import './components/generic/text-input/text-input.scss';
 
 //components
 @import './components/header/header.scss';
@@ -22,3 +23,5 @@
 @import './components/certificate/certificate.scss';
 @import './components/registration/registration.scss';
 @import './components/repost-discount/repost-discount.scss';
+@import './components/registration-form/registration-form.scss';
+@import './components/checkbox-agreement/checkbox-agreement.scss';

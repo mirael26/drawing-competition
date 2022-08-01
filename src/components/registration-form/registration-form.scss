@@ -1,0 +1,55 @@
+.registration-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-form__title {
+  @include h2-text;
+  margin-bottom: 50px;
+  color: $accent-content-color;
+}
+
+.registration-form__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 540px;
+  margin-bottom: 52px;
+}
+
+.registration-form__agreement {
+  width: 481px;
+  margin-bottom: 50px;
+}
+
+.registration-form__submit-button {
+  width: 290px;
+}
+
+.registration-form__paper-plane-1 {
+  position: absolute;
+  bottom: -11px;
+  right: 84px;
+  width: 144px;
+  height: 90px;
+  background: url('../../img/paper-plane-1.svg') center no-repeat;
+}
+
+.registration-form__paper-plane-2 {
+  position: absolute;
+  bottom: 4px;
+  right: 37px;
+  width: 127px;
+  height: 90px;
+  background: url('../../img/paper-plane-2.svg') center no-repeat;
+}
+
+.registration-form__paper-plane-3 {
+  position: absolute;
+  bottom: -11px;
+  right: 84px;
+  width: 127px;
+  height: 90px;
+  background: url('../../img/paper-plane-3.svg') center no-repeat;
+}
