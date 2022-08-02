@@ -47,10 +47,12 @@
 .space-image__atom {
   position: absolute;
   top: 132px;
-  right: 739px;
+  right: 770px;
   width: 50px;
   height: 50px;
   background: url('../../img/space/atom.svg') center no-repeat;
+
+  animation: atom-animation 12s ease-out infinite;
 }
 
 .space-image__moon {
@@ -60,24 +62,36 @@
   width: 75px;
   height: 75px;
   background: url('../../img/space/moon.svg') center no-repeat;
+
+  animation: moon-animation 6s ease-in-out infinite alternate;
 }
 
-.space-image__alarm {
+.space-image__alarm-wrapper {
   position: absolute;
   top: 220px;
   right: 661px;
+
+  animation: alarm-animation-scale 12s ease-in-out infinite;
+}
+
+.space-image__alarm {
   width: 65px;
   height: 90px;
   background: url('../../img/space/alarm.svg') center no-repeat;
+  transform: rotate(14deg);
+
+  animation: alarm-animation-rotate 12s ease-in-out infinite;
 }
 
 .space-image__rocket {
   position: absolute;
-  top: 353px;
-  right: 606px;
+  top: 431px;
+  right: 617px;
   width: 170px;
   height: 140px;
   background: url('../../img/space/rocket.svg') center no-repeat;
+
+  animation: rocket-animation 12s ease-out infinite;
 }
 
 .space-image__striped-planet {
@@ -87,6 +101,8 @@
   width: 50px;
   height: 50px;
   background: url('../../img/space/striped-planet.svg') center no-repeat;
+
+  animation: striped-planet-animation 6s ease-in-out 0.8s infinite alternate;
 }
 
 .space-image__aerostat {
@@ -96,6 +112,7 @@
   width: 70px;
   height: 100px;
   background: url('../../img/space/aerostat.svg') center no-repeat;
+  animation: aerostat-animation 6s ease-in-out infinite alternate;
 }
 
 .space-image__earth {
@@ -105,6 +122,8 @@
   width: 50px;
   height: 50px;
   background: url('../../img/space/earth.svg') center no-repeat;
+
+  animation: earth-animation 6s ease-in-out infinite alternate;
 }
 
 .space-image__bulb {
@@ -114,6 +133,9 @@
   width: 110px;
   height: 110px;
   background: url('../../img/space/bulb.svg') center no-repeat;
+  transform: rotate(16deg);
+
+  animation: bulb-animation 12s ease-in-out infinite;
 }
 
 .space-image__plus {
@@ -123,6 +145,8 @@
   width: 30px;
   height: 30px;
   background: url('../../img/space/plus.svg') center no-repeat;
+
+  animation: plus-animation 12s ease infinite;
 }
 
 .space-image__division {
@@ -132,6 +156,8 @@
   width: 35px;
   height: 40px;
   background: url('../../img/space/division.svg') center no-repeat;
+
+  animation: division-animation 12s ease infinite;
 }
 
 .space-image__elephant {
@@ -141,6 +167,9 @@
   width: 115px;
   height: 90px;
   background: url('../../img/space/elephant.svg') center no-repeat;
+  transform: rotate(-11deg);
+
+  animation: elephant-animation 6s ease-in-out infinite alternate;
 }
 
 .space-image__palette {
@@ -150,6 +179,8 @@
   width: 72px;
   height: 51px;
   background: url('../../img/space/palette.svg') center no-repeat;
+
+  animation: palette-animation 12s ease-in-out infinite 2s;
 }
 
 .space-image__plane {
@@ -159,6 +190,8 @@
   width: 115px;
   height: 45px;
   background: url('../../img/space/plane.svg') center no-repeat;
+
+  animation: plane-animation 6s ease-in-out infinite alternate-reverse;
 }
 
 .space-image__stars {
@@ -177,5 +210,158 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes elephant-animation {
+  100% {
+    transform: rotate(30deg) translateX(10px);
+  }
+}
+
+@keyframes bulb-animation {
+  25% {
+    transform: rotate(-24deg);
+  }
+  58% {
+    transform: rotate(19deg);
+  }
+  75% {
+    transform: rotate(40deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes rocket-animation {
+  67% {
+    transform: translateY(-70px);
+  }
+}
+
+@keyframes palette-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(360deg);
+  }
+  83% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes alarm-animation-scale {
+  0% {
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(1);
+  }
+  67% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.7);
+  }
+}
+
+@keyframes alarm-animation-rotate {
+  0% {
+    transform: rotate(14deg);
+  }
+  100% {   
+    transform: rotate(-346deg);
+  }
+}
+
+@keyframes plane-animation {
+  100% {
+    transform: scale(0.5) rotate(45deg);
+  }
+}
+
+@keyframes striped-planet-animation {
+  100% {
+    transform: translateX(30px);
+  }
+}
+
+@keyframes moon-animation {
+  100% {
+    transform: translate(-50px, 20px);
+  }
+}
+
+@keyframes atom-animation {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1)  rotate(45deg);
+  }
+  100% {
+    transform: scale(0)  rotate(90deg);
+  }
+}
+
+@keyframes earth-animation {
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes division-animation {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  17% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  33% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes plus-animation {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  67% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  83% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes aerostat-animation {
+  100% {
+    transform: translateY(34px);
   }
 }

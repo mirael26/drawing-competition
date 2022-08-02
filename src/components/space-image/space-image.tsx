@@ -11,7 +11,11 @@ const SpaceImage = (): JSX.Element => {
       <div className="space-image__space">
         <div className="space-image__atom"></div>
         <div className="space-image__moon"></div>
-        <div className="space-image__alarm"></div>
+
+        <div className="space-image__alarm-wrapper">
+          <div className="space-image__alarm"></div>
+        </div>
+
         <div className="space-image__rocket"></div>
         <div className="space-image__striped-planet"></div>
         <div className="space-image__aerostat"></div>
