@@ -1,11 +1,22 @@
 import * as React from "react";
+import { useState } from "react";
 
 const SpaceImage = (): JSX.Element => {
+  const [pencilAnimate, setPencilAnimate] = useState(null);
+
+  const onGirlClick = () => {
+    if (pencilAnimate === 3) {
+      setPencilAnimate(1);
+      return;
+    }
+    setPencilAnimate(pencilAnimate + 1);
+  };
+
   return (
     <div className="space-image">
       <div className="space-image__paper-planes"></div>
-      <div className="space-image__girl">
-        <div className="space-image__pencil"></div>
+      <div className="space-image__girl" onClick={onGirlClick}>
+        <div className={`space-image__pencil${pencilAnimate ? ` animated-${pencilAnimate}` : ''}`}></div>
       </div>
 
       <div className="space-image__space">

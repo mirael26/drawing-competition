@@ -18,17 +18,32 @@
   width: 275px;
   height: 330px;
   background: url('../../img/girl.svg') center no-repeat;
+  cursor: pointer;
 }
 
 .space-image__pencil {
   position: absolute;
-  top: 156px;
+  top: 162px;
   right: 189px;
   width: 52px;
   height: 50px;
   background: url('../../img/pencil.svg') center no-repeat;
   z-index: -1;
-  transform: rotate(-121deg);
+  transform: rotate(-108deg);
+
+  &.animated-1 {
+    animation: pencil-animation-1 1s cubic-bezier(.68,.24,.2,.75) 1 forwards;
+  }
+
+  &.animated-2 {
+    animation: pencil-animation-2 1s cubic-bezier(.68,.24,.2,.75) 1 forwards;
+
+  }
+
+  &.animated-3 {
+    animation: pencil-animation-3 0.7s cubic-bezier(.68,.24,.2,.75) 1 forwards;
+
+  }
 }
 
 .space-image__space {
@@ -363,5 +378,53 @@
 @keyframes aerostat-animation {
   100% {
     transform: translateY(34px);
+  }
+}
+
+@keyframes pencil-animation-1 {
+  35% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(-70deg);
+  }
+  75% {
+    transform: rotate(-63deg);
+  }
+  100% {
+    transform: rotate(-66deg);
+  }
+}
+
+@keyframes pencil-animation-2 {
+  0% {
+    transform: rotate(-66deg);
+  }
+  35% {
+    transform: rotate(-140deg) translateX(8px);
+  }
+  50% {
+    transform: rotate(-100deg) translateX(8px);
+  }
+  75% {
+    transform: rotate(-120deg) translateX(8px);
+  }
+  100% {
+    transform: rotate(-125deg) translateX(8px);
+  }
+}
+
+@keyframes pencil-animation-3 {
+  0% {
+    transform: rotate(-125deg) translateX(8px);
+  }
+  50% {
+    transform: rotate(-100deg);
+  }
+  75% {
+    transform: rotate(-112deg);
+  }
+  100% {
+    transform: rotate(-108deg);
   }
 }
