@@ -8,11 +8,12 @@ interface ButtonProps {
   text: string,
   shadow?: boolean,
   border?: ButtonBorder,
+  animation?: 'toSimple',
 }
 
-const Button = ({color = 'main', size = 'normal', text, shadow, border}: ButtonProps): JSX.Element => {
+const Button = ({color = 'main', size = 'normal', text, shadow, border, animation}: ButtonProps): JSX.Element => {
   return (
-    <div className={`button button--${color} button--${size}${shadow ? ' button--shadow' : ''}${border ? ` button--border-${border}` : ''}`}>
+    <div className={`button button--${color} button--${size}${shadow ? ' button--shadow' : ''}${border ? ` button--border-${border}` : ''}${animation ? ` ${animation}` : ''}`}>
       {text}
     </div>
   )

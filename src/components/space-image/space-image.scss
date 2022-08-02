@@ -38,7 +38,10 @@
   width: 882px;
   height: 693px;
   background: url('../../img/space/space-bg.svg') center no-repeat;
+  opacity: 0;
   z-index: -2;
+
+  animation: appearance 1s ease-in 1 2.5s forwards;
 }
 
 .space-image__atom {
@@ -166,4 +169,13 @@
   height: 510px;
   background: url('../../img/space/stars.svg') no-repeat;
   z-index: -1;
+}
+
+@keyframes appearance {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

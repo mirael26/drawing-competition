@@ -12,7 +12,7 @@ const Header = (): JSX.Element => {
         <div className="header__header">
           <Logo />
           <div className="header__login-button">
-            <Button color={'simple'} size={'small'} border={'dark'} text={'Войти'}/>
+            <Button color={'accent'} size={'small'} text={'Войти'} animation={'toSimple'}/>
           </div>
         </div>
 

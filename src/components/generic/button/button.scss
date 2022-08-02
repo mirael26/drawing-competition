@@ -46,4 +46,16 @@
   &--border-pale {
     border: 1px solid $pale-content-color;
   }
+
+  &.toSimple {
+    animation: toSimple 1s ease-in 1 2.5s forwards;
+  }
+}
+
+@keyframes toSimple {
+  100% {
+    color: $accent-content-color;
+    background-color: #fff;
+    border: 1px solid $accent-content-color;
+  }
 }
