@@ -1,10 +1,23 @@
 import * as React from "react";
+import { useState } from "react";
 
 import TextInput from "../generic/text-input/text-input";
 import CheckboxAgreement from "../checkbox-agreement/checkbox-agreement";
 import Button from "../generic/button/button";
 
 const RegistrationForm = (): JSX.Element => {
+  const [isAnimated, setIsAnimated] = useState(false);
+
+  const onPlanesClick = () => {
+    if (!isAnimated) {
+      setIsAnimated(true);
+
+      setTimeout(() => {
+        setIsAnimated(false)
+      }, 3000);
+    }
+  }
+
   return (
     <form className="registration-form">
       <h2 className="registration-form__title">Зарегистрируйтесь, чтобы участвовать</h2>
@@ -25,7 +38,7 @@ const RegistrationForm = (): JSX.Element => {
         <Button color={'additional-accent'} shadow text={'Участвовать'} />
       </div>
 
-      <div className="registration-form__paper-planes">
+      <div className={`registration-form__paper-planes${isAnimated ? ' animated' : ''}`} onClick={onPlanesClick}>
         <div className="registration-form__paper-plane-1"></div>
         <div className="registration-form__paper-plane-2"></div>
         <div className="registration-form__paper-plane-3"></div>
