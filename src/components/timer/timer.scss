@@ -18,6 +18,12 @@
   font-size: 24px;
   line-height: 33px;
   color: $accent-content-color;
+
+  animation-name: timer-tic;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
 }
 
 .timer__cell {
@@ -52,5 +58,14 @@
 
   &--light {
     color: $pale-content-color;
+  }
+}
+
+@keyframes timer-tic {
+  0%{
+    opacity: 0;
+  }
+  33%{
+    opacity: 1;
   }
 }
