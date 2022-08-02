@@ -1,5 +1,6 @@
 .instruction {
   @include center-container;
+  position: relative;
   padding: 100px 0;
 }
 
@@ -35,17 +36,17 @@
   position: absolute;
   display: flex;
 
-  &:first-child {
+  &--1 {
     top: 0px;
     left: 0px;
   }
 
-  &:nth-child(2) {
+  &--2 {
     top: 203px;
     left: 467px;
   }
 
-  &:last-child {
+  &--3 {
     bottom: 0px;
     left: 947px;
   }
@@ -71,6 +72,19 @@
 .instruction__text {
   @include title-text;
   width: 270px;
+  opacity: 0;
+}
+
+.instruction.visible .instruction__item--1 .instruction__text {
+  animation: text-animation 0.5s linear 0.3s 1 forwards;
+}
+
+.instruction.visible .instruction__item--2 .instruction__text {
+  animation: text-animation 0.5s linear 0.8s 1 forwards;
+}
+
+.instruction.visible .instruction__item--3 .instruction__text {
+  animation: text-animation 0.5s linear 1.3s 1 forwards;
 }
 
 .instruction__link {
@@ -78,4 +92,70 @@
   font-weight: 500;
   color: $main-color;
   text-decoration: underline;
+}
+
+.instruction__plane {
+  position: absolute;
+  top: 190px;
+  left: -300px;
+  width: 127px;
+  height: 90px;
+  background: url('../../img/plane-to-right.svg') center no-repeat;
+  opacity: 0;
+}
+
+.instruction.visible .instruction__plane {
+  animation: plane-animation 2s linear 1;
+}
+
+@keyframes text-animation {
+  0% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes plane-animation {
+  0% {
+    opacity: 0;
+  }
+  8% {
+    opacity: 1;
+    transform: translate(263px, 29px);
+  }
+  17% {
+    opacity: 1;
+    transform: translate(409px, 64px) rotate(14deg);
+  }
+  55% {
+    opacity: 1;
+    transform: translate(1100px, 413px) rotate(14deg);
+  }
+  58% {
+    opacity: 1;
+    transform: translate(1227px, 453px) rotate(-7deg);
+  }
+  67% {
+    opacity: 1;
+    transform: translate(1419px, 482px) rotate(-4deg);
+  }
+  69% {
+    opacity: 1;
+    transform: translate(1532px, 473px) rotate(-15deg);
+  }
+  74% {
+    opacity: 1;
+    transform: translate(1632px, 445px) rotate(-26deg);
+  }
+  81% {
+    opacity: 1;
+    transform: translate(1750px, 393px) rotate(-36deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(1950px, 289px) rotate(-36deg);
+  }
 }
