@@ -206,7 +206,7 @@
   height: 45px;
   background: url('../../img/space/plane.svg') center no-repeat;
 
-  animation: plane-animation 6s ease-in-out infinite alternate-reverse;
+  animation: space-plane-animation 6s ease-in-out infinite alternate-reverse;
 }
 
 .space-image__stars {
@@ -294,7 +294,7 @@
   }
 }
 
-@keyframes plane-animation {
+@keyframes space-plane-animation {
   100% {
     transform: scale(0.5) rotate(45deg);
   }
